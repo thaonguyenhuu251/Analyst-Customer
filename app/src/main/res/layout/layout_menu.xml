@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                app:drawableStartCompat="@drawable/ic_home" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtMyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_profile"
+                app:drawableStartCompat="@drawable/ic_personal" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtChatWithMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chat_with_me"
+                app:drawableStartCompat="@drawable/ic_call_me" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"
+                app:drawableStartCompat="@drawable/ic_about_us" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_privacy"
+                app:drawableStartCompat="@drawable/ic_term" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/text_ContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                app:drawableStartCompat="@drawable/ic_contact_us" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtTrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trash"
+                app:drawableStartCompat="@drawable/ic_trash" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtClockApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clock_app"
+                android:textColor="@color/red_primary"
+                app:drawableStartCompat="@drawable/ic_lock"
+                app:drawableTint="@color/red_primary" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/powered_by_me"
+                app:drawableStartCompat="@drawable/ic_copy_right" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

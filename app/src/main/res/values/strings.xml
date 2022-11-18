@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Customer Analysis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="LoginFingerprint">Fingerprint Login</string>
+    <string name="loginPass">Login Password</string>
+    <string name="blue">Blue</string>
+    <string name="orange">Orange</string>
+    <string name="turquoise">Turquoise</string>
+    <string name="yellow">Yellow</string>
+    <string name="powered_by_me">Powered by HT NGUYEN</string>
+    <string name="clock_app">Clock App</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="term_privacy">Term Privacy</string>
+    <string name="about_us">About Us</string>
+    <string name="chat_with_me">Chat With Me</string>
+    <string name="my_profile">My Profile</string>
+    <string name="login">Login</string>
+    <string name="vietnam">Vietnam</string>
+    <string name="englishuk">English (UK)</string>
+    <string name="russian">Russian</string>
+    <string name="choose_your_language">Choose your language</string>
+    <string name="trash">Trash</string>
+
+    <string name="search">Search...</string>
+    <string name="home">Home</string>
 </resources>
