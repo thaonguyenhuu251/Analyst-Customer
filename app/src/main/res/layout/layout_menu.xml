@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="3">
+    android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
 
     </RelativeLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -22,6 +22,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lnVipVersion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/bg_vip_version"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DisableBaselineAlignment,UselessParent">
+
+                <TextView
+                    android:id="@+id/txtMoreEffectively"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="casual"
+                    android:text="@string/more_effectively"
+                    android:textColor="?colorAccent"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVipVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMoreEffectively"
+                    android:layout_alignStart="@+id/txtMoreEffectively"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/vip_version"
+                    android:textColor="?colorAccent"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSeeMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtVipVersion"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:text="@string/see_more" />
+
+            </RelativeLayout>
 
             <TextView
                 style="@style/TextViewDrawer"
@@ -32,12 +82,154 @@
                 app:drawableStartCompat="@drawable/ic_home" />
 
             <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My profile" />
+
+            <TextView
                 style="@style/TextViewDrawer"
                 android:id="@+id/txtMyProfile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/my_profile"
                 app:drawableStartCompat="@drawable/ic_personal" />
+
+            <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feature" />
+
+            <LinearLayout
+                android:id="@+id/lnDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDarkMode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/dark_mode"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/black"
+                    app:drawableStartCompat="@drawable/ic_dark_mode"
+                    app:drawableTint="?colorAccent"  />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swDarkMode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_10sdp"
+                    app:drawableTint="?colorAccent"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Language"
+                app:drawableStartCompat="@drawable/ic_language" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background Color"
+                app:drawableStartCompat="@drawable/ic_display_settings" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtTrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trash"
+                android:textColor="@color/black"
+                app:drawableStartCompat="@drawable/ic_trash" />
+
+            <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security" />
+
+            <LinearLayout
+                android:id="@+id/lnLoginFingerprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLoginFingerprint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:text="@string/LoginFingerprint"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/black"
+                    app:drawableStartCompat="@drawable/ic_fingerprint_setting"
+                    app:drawableTint="?colorAccent"  />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swLoginFingerprint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_10sdp"
+                    app:drawableTint="?colorAccent"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null"
+                android:scrollbars="none"
+                android:childDivider="@color/textColorAppNight"
+                />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/txtClockApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clock_app"
+                android:textColor="@color/red_primary"
+                app:drawableStartCompat="@drawable/ic_lock"
+                app:drawableTint="@color/red_primary" />
+
+            <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact" />
+
+            <TextView
+                style="@style/TextViewDrawer"
+                android:id="@+id/text_ContactUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                app:drawableStartCompat="@drawable/ic_contact_us" />
 
             <TextView
                 style="@style/TextViewDrawer"
@@ -56,37 +248,17 @@
                 app:drawableStartCompat="@drawable/ic_about_us" />
 
             <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About" />
+
+            <TextView
                 style="@style/TextViewDrawer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/term_privacy"
                 app:drawableStartCompat="@drawable/ic_term" />
-
-            <TextView
-                style="@style/TextViewDrawer"
-                android:id="@+id/text_ContactUs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/contact_us"
-                app:drawableStartCompat="@drawable/ic_contact_us" />
-
-            <TextView
-                style="@style/TextViewDrawer"
-                android:id="@+id/txtTrash"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/trash"
-                app:drawableStartCompat="@drawable/ic_trash" />
-
-            <TextView
-                style="@style/TextViewDrawer"
-                android:id="@+id/txtClockApp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/clock_app"
-                android:textColor="@color/red_primary"
-                app:drawableStartCompat="@drawable/ic_lock"
-                app:drawableTint="@color/red_primary" />
 
             <TextView
                 style="@style/TextViewDrawer"
@@ -97,6 +269,6 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

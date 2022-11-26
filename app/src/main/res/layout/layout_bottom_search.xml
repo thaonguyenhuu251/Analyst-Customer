@@ -15,14 +15,14 @@
     <ImageView
         android:id="@+id/txtTitle"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_35sdp"
-        android:src="@drawable/ic_line"/>
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_minus"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/_10sdp"
-        android:elevation="@dimen/_10sdp"
+        android:elevation="@dimen/_30sdp"
         android:background="@drawable/bg_bottom_search"
         android:orientation="horizontal">
         <RelativeLayout
@@ -51,7 +51,7 @@
                 android:paddingHorizontal="@dimen/_10sdp"
                 android:singleLine="true"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:drawableTint="?colorAccent" />
 
             <TextView
@@ -61,10 +61,10 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:padding="@dimen/_5sdp"
-                tools:ignore="ContentDescription"
+                android:padding="@dimen/_6sdp"
                 app:drawableStartCompat="@drawable/ic_close"
-                app:drawableTint="?colorAccent" />
+                app:drawableTint="?colorAccent"
+                tools:ignore="ContentDescription" />
         </RelativeLayout>
     </LinearLayout>
 

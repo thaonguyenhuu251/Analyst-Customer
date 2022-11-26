@@ -40,7 +40,7 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:drawablePadding="@dimen/_5sdp"
                         android:gravity="center"
-                        android:text="Customer Analysis"
+                        android:text="@string/customer_analysis"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"
@@ -91,8 +91,10 @@
                 android:layout_margin="@dimen/_15sdp"
                 android:src="@drawable/ic_add"
                 android:id="@+id/btnAdd"
+                app:tint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="TODO" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

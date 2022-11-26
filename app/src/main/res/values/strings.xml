@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Customer Analysis</string>
+    <string name="work_day" translatable="false">dd/MM/yyyy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -17,12 +18,58 @@
     <string name="chat_with_me">Chat With Me</string>
     <string name="my_profile">My Profile</string>
     <string name="login">Login</string>
-    <string name="vietnam">Vietnam</string>
-    <string name="englishuk">English (UK)</string>
-    <string name="russian">Russian</string>
+    <string name="dark_mode" translatable="false">Dark Mode</string>
     <string name="choose_your_language">Choose your language</string>
     <string name="trash">Trash</string>
+    <string name="more_effectively">More effectively</string>
+    <string name="vip_version">VIP VERSION</string>
+    <string name="see_more">SEE MORE</string>
 
     <string name="search">Search...</string>
     <string name="home">Home</string>
+    <string name="add_data">Add Data</string>
+    <string name="input_your_name">Input your name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="married">Married</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dependent">Dependent</string>
+    <string name="education">Education</string>
+    <string name="graduate">Graduate</string>
+    <string name="not">Not</string>
+    <string name="self_employed">Self Employed</string>
+    <string name="input_credit_history">Input Credit History</string>
+    <string name="input_property_area">Input Property Area</string>
+    <string name="input_total_income">Input Total Income</string>
+    <string name="input_total_income_log">Input Total Income Log</string>
+    <string name="input_balance_income">Input Balance Income</string>
+    <string name="input_emi">Input EMI</string>
+    <string name="customer_analysis">Customer Analysis</string>
+    <string name="choose_your_color">Choose Your Color</string>
+    <string name="lock">Lock</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="pin">Pin</string>
+    <string name="process">Process</string>
+    <string name="data_success">Data Successfully saved</string>
+    <string name="do_not_blank">Do not leave blank</string>
+
+    <string name="sort">Sort</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="sort_by_time_create">Sort By Time Create</string>
+    <string name="sort_by_time_open">Sort By Time Open</string>
+    <string name="sort_by_time_ID">Sort By ID</string>
+    <string name="language">Language</string>
+
+    <array name="string_sub">
+        <item>Login Password</item>
+    </array>
+
+    <array name="string_list">
+        <item>Set Password</item>
+        <item>Change Password</item>
+        <item>Delete Password</item>
+    </array>
 </resources>

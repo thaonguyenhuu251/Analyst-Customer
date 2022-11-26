@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottomsheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtViewModeDialogTiltle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sort"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/bg_bottom_sheet_blue"
+        app:drawableTint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/txtTimeAc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="@string/sort_by_time_ID"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:drawableTint="?colorAccent"
+        app:drawableEndCompat="@drawable/ic_back_right" />
+
+
+    <TextView
+        android:id="@+id/txtNameAc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="@string/sort_by_name"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:drawableTint="?colorAccent"
+        app:drawableEndCompat="@drawable/ic_back_right" />
+
+    <TextView
+        android:id="@+id/txtTimeCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="@string/sort_by_time_create"
+        android:textSize="@dimen/_12ssp"
+        app:drawableTint="?colorAccent"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:drawableEndCompat="@drawable/ic_back_right" />
+
+    <TextView
+        android:id="@+id/txtTimeOpen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="@string/sort_by_time_open"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:drawableTint="?colorAccent"
+        app:drawableEndCompat="@drawable/ic_back_right" />
+
+</LinearLayout>
