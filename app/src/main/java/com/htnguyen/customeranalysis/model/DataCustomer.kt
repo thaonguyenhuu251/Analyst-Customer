@@ -43,3 +43,40 @@ data class DataCustomer (
     @ColumnInfo(name = "result")
     var result: Int? = null,
 )
+
+
+data class CustomerRequest (
+    @ColumnInfo(name = "Gender")
+    var gender: Boolean? = null,
+    @ColumnInfo(name = "Married")
+    var married: Boolean? = null,
+    @ColumnInfo(name = "Dependents")
+    var dependent: Boolean? = null,
+    @ColumnInfo(name = "Education")
+    var education: Boolean? = null,
+    @ColumnInfo(name = "Self_Employed")
+    var employed: Boolean? = null,
+
+    @ColumnInfo(name = "Credit_History")
+    var creditHistory: Float? = null,
+
+    @ColumnInfo(name = "Property_Area")
+    var propertyArea: Int? = null,
+
+    @ColumnInfo(name = "Total_Income")
+    var totalIncome: Float? = null,
+
+    @ColumnInfo(name = "Total_Income_log")
+    var incomeLog: Float? = null,
+
+    @ColumnInfo(name = "EMI")
+    var emi: Float? = null,
+
+    @ColumnInfo(name = "Balance_Income")
+    var balanceIncome: Float? = null,
+)
+
+data class CustomerResponse (
+    @ColumnInfo(name = "result")
+    var result: Int? = null,
+)

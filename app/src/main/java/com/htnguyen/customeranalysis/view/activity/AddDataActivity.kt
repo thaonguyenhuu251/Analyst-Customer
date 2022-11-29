@@ -8,9 +8,16 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.htnguyen.customeranalysis.R
 import com.htnguyen.customeranalysis.databinding.ActivityAddDataBinding
+import com.htnguyen.customeranalysis.interfaces.ApiInterface
+import com.htnguyen.customeranalysis.model.CustomerRequest
+import com.htnguyen.customeranalysis.model.CustomerResponse
+import com.htnguyen.customeranalysis.service.ServiceBuilder
 import com.htnguyen.customeranalysis.ultils.Constants
 import com.htnguyen.customeranalysis.ultils.FileUtils.hideKeyboard
-import java.util.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+
 class AddDataActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddDataBinding
 
@@ -19,8 +26,38 @@ class AddDataActivity : AppCompatActivity() {
         binding = ActivityAddDataBinding.inflate(layoutInflater)
         val view: View = binding.root
         setContentView(view)
-
+        getData()
         initView()
+    }
+
+    private fun getData() {
+        val id = intent.getLongExtra(Constants.CUSTOMER_ID, System.currentTimeMillis())
+        val nameCustomer = intent.getStringExtra(Constants.CUSTOMER_NAME)
+        val gender = intent.getBooleanExtra(Constants.CUSTOMER_GENDER, false)
+        val married = intent.getBooleanExtra(Constants.CUSTOMER_MARRIED, false)
+        val dependent = intent.getBooleanExtra(Constants.CUSTOMER_DEPENDENT, false)
+        val education = intent.getBooleanExtra(Constants.CUSTOMER_EDUCATION, false)
+        val employed = intent.getBooleanExtra(Constants.CUSTOMER_EMPLOYED, false)
+
+
+        val creditHistory = intent.getFloatExtra(Constants.CUSTOMER_CREDIT, 0F)
+        val propertyArea = intent.getIntExtra(Constants.CUSTOMER_PROPERTY, 0)
+        val totalIncome = intent.getFloatExtra(Constants.CUSTOMER_TOTAL_INCOME, 0F)
+        val incomeLog = intent.getFloatExtra(Constants.CUSTOMER_INCOME_LOG, 0F)
+        val emi = intent.getFloatExtra(Constants.CUSTOMER_EMI, 0F)
+        val balanceIncome = intent.getFloatExtra(Constants.CUSTOMER_BALANCE_INCOME, 0F)
+
+        val result = intent.getIntExtra(Constants.CUSTOMER_RESULT, 0)
+
+        binding.edtInputName.setText(nameCustomer)
+
+
+        binding.edtProperty.setText(propertyArea.toString())
+        binding.edtEmi.setText(emi.toString())
+        binding.edtBalance.setText(balanceIncome.toString())
+        binding.edtCredit.setText(creditHistory.toString())
+        binding.edtTotalIncome.setText(totalIncome.toString())
+        binding.edtIncomeLog.setText(incomeLog.toString())
     }
 
     private fun initView() {
@@ -90,6 +127,38 @@ class AddDataActivity : AppCompatActivity() {
                 binding.edtEmi.setText("")
                 binding.edtBalance.setText("")
                 binding.edtProperty.setText("")
+
+                val requestModel = CustomerRequest(
+                    gender,
+                    married,
+                    dependent,
+                    education,
+                    employed,
+                    creditHistory,
+                    propertyArea,
+                    totalIncome,
+                    incomeLog,
+                    emi,
+                    balanceIncome
+                )
+
+                val response = ServiceBuilder.buildService(ApiInterface::class.java)
+                response.sendReq(requestModel).enqueue(
+                    object : Callback<CustomerResponse> {
+                        override fun onResponse(
+                            call: Call<CustomerResponse>,
+                            response: Response<CustomerResponse>
+                        ) {
+                            Toast.makeText(this@AddDataActivity,response.message().toString(),Toast.LENGTH_LONG).show()
+                        }
+
+                        override fun onFailure(call: Call<CustomerResponse>, t: Throwable) {
+                            Toast.makeText(this@AddDataActivity,t.toString(),Toast.LENGTH_LONG).show()
+                        }
+
+                    }
+                )
+
                 onBackPressed()
 
             } catch (e: Exception) {

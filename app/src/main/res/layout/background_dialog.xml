@@ -56,7 +56,7 @@
                 android:layout_margin="@dimen/_10sdp"
                 android:button="@android:color/transparent"
                 android:background="@drawable/selector_color"
-                android:backgroundTint="@color/black" />
+                android:backgroundTint="@color/blue" />
 
             <RadioButton
                 android:layout_width="@dimen/_40sdp"
@@ -64,7 +64,7 @@
                 android:layout_margin="@dimen/_10sdp"
                 android:button="@android:color/transparent"
                 android:background="@drawable/selector_color"
-                android:backgroundTint="@color/yellow" />
+                android:backgroundTint="@color/green" />
 
         </RadioGroup>
 
@@ -97,7 +97,7 @@
                 android:layout_margin="@dimen/_10sdp"
                 android:button="@android:color/transparent"
                 android:background="@drawable/selector_color"
-                android:backgroundTint="@color/yellow" />
+                android:backgroundTint="@color/blue4" />
 
             <RadioButton
                 android:layout_width="@dimen/_40sdp"
@@ -105,7 +105,7 @@
                 android:layout_margin="@dimen/_10sdp"
                 android:button="@android:color/transparent"
                 android:background="@drawable/selector_color"
-                android:backgroundTint="@color/yellow" />
+                android:backgroundTint="@color/orange_light" />
         </RadioGroup>
 
     </RadioGroup>

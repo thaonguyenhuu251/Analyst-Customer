@@ -86,6 +86,7 @@
             app:drawableTopCompat="@drawable/ic_star" />
 
         <TextView
+            android:id="@+id/txtEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/edit"

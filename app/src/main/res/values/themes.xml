@@ -3,7 +3,8 @@
     <style name="Theme.CustomerAnalysis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorPrimaryVariant">@color/orange_light</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/orange</item>
@@ -24,13 +25,11 @@
     </style>
 
     <style name="SettingsGroupTitleTextViewStyle">
-        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textColor">?colorAccent</item>
         <item name="android:textSize">@dimen/_14sdp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">@dimen/_5sdp</item>
     </style>
-
-
 
     <style name="MyDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:windowMinWidthMajor">80%</item>
@@ -41,21 +40,21 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="marginHorizontal">@dimen/_10sdp</item>
-        <item name="colorAccent">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
     </style>
 
     <style name="roundedCornersImageView" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/_10sdp</item>
         <item name="strokeWidth">@dimen/_2sdp</item>
-        <item name="strokeColor">?attr/colorPrimaryVariant</item>
+        <item name="strokeColor">?attr/colorPrimary</item>
     </style>
 
     <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">false</item>
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
-        <item name="colorAccent">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
     </style>
 
     <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
@@ -66,6 +65,21 @@
         // yep, that helped to skip collapsed state at initial
         <item name="behavior_hideable">true</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="colorAccent">?attr/colorPrimaryVariant</item>
+        <item name="colorAccent">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextDetail">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="TextDetailTitle">
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
     </style>
 </resources>
