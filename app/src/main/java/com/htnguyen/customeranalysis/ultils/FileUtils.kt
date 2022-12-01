@@ -84,4 +84,43 @@ object FileUtils {
         }
     }
 
+    fun getColorTheme(color: Int): Int {
+        return when (color) {
+            R.id.rbColor1 -> R.style.MyDialog
+            R.id.rbColor2-> R.style.MyDialog
+            R.id.rbColor3 -> R.style.MyDialog
+            R.id.rbColor4 -> R.style.MyDialog
+            R.id.rbColor5 -> R.style.MyDialog
+            R.id.rbColor6 -> R.style.MyDialog
+            R.id.rbColor7 -> R.style.MyDialog
+            else -> R.style.MyDialog
+        }
+    }
+
+    fun getColorDark(color: Int): Int {
+        return when (color) {
+            R.id.rbColor1 -> R.style.MyDialog
+            R.id.rbColor2 -> R.style.MyDialog
+            R.id.rbColor3 -> R.style.MyDialog
+            R.id.rbColor4 -> R.style.MyDialog
+            R.id.rbColor5 -> R.style.MyDialog
+            R.id.rbColor6 -> R.style.MyDialog
+            R.id.rbColor7 -> R.style.MyDialog
+            else -> R.style.MyDialog
+        }
+    }
+
+    fun getColorString(color: Int): String {
+        return when (color) {
+            R.id.rbColor1 -> Constants.COLOR_TEAL
+            R.id.rbColor2 -> Constants.COLOR_ORANGE
+            R.id.rbColor3 -> Constants.COLOR_SKYBLUE
+            R.id.rbColor4 -> Constants.COLOR_GREEN
+            R.id.rbColor5 -> Constants.COLOR_YELLOW
+            R.id.rbColor6 -> Constants.COLOR_RED
+            R.id.rbColor7 -> Constants.COLOR_BLUE
+            else -> Constants.COLOR_BROWN
+        }
+    }
+
 }

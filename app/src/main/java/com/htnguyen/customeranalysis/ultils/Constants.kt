@@ -1,6 +1,7 @@
 package com.htnguyen.customeranalysis.ultils
 
 import androidx.appcompat.app.AppCompatDelegate
+import com.htnguyen.customeranalysis.R
 
 object Constants {
     const val FACEBOOK_URL = "https://www.facebook.com/PhanAnhcs2501"
@@ -54,17 +55,19 @@ object Constants {
     const val SORT_AC = "SORT_AC"
     const val SORT_DC = "SORT_DC"
 
-    const val COLOR_BLUE = "color_blue"
-    const val COLOR_RED = "color_red"
-    const val COLOR_PINK = "color_pink"
-    const val COLOR_DARKPINK = "color_darkpink"
-    const val COLOR_VIOLET = "color_violet"
-    const val COLOR_SKYBLUE = "color_skyblue"
-    const val COLOR_GREEN = "color_green"
-    const val COLOR_GREY = "color_grey"
-    const val COLOR_BROWN = "color_brown"
+    const val COLOR_TEAL = "COLOR_TEAL"
+    const val COLOR_RED = "COLOR_RED"
+    const val COLOR_ORANGE = "COLOR_ORANGE"
+    const val COLOR_YELLOW = "COLOR_YELLOW"
+    const val COLOR_SKYBLUE = "COLOR_SKYBLUE"
+    const val COLOR_GREEN = "COLOR_GREEN"
+    const val COLOR_BLUE = "COLOR_BLUE"
+    const val COLOR_BROWN = "COLOR_BROWN"
 
-    const val channelID = "CH1"
-    const val notificationID = 1
+    var theme: Int = 0
+    var colorApp: Int = 0
+    var themes: Int = AppCompatDelegate.MODE_NIGHT_NO
+    var layout: Int = 0
+    var viewMode: Int = 0
 
 }

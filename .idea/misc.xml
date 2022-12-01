@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_term.xml" value="0.14" />
         <entry key="app/src/main/res/drawable-v24/selector_color.xml" value="0.14" />
+        <entry key="app/src/main/res/drawable/bg_black_shape.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/bg_bottom_search.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/bg_bottom_sheet_blue.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/bg_bottomsheet.xml" value="0.14" />
@@ -41,12 +42,15 @@
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/ic_sort.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/ic_star.xml" value="0.14" />
+        <entry key="app/src/main/res/drawable/ic_star_full_yellow_24dp.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/ic_term.xml" value="0.14" />
+        <entry key="app/src/main/res/drawable/ic_text_documents.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/ic_trash.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/ic_upload_image.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/selector_color.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/tab_color_selector.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/thumb.xml" value="0.14" />
+        <entry key="app/src/main/res/layout-v23/item_card.xml" value="0.29375" />
         <entry key="app/src/main/res/layout/activity_add_data.xml" value="0.26929575602213546" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.21822916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23020833333333332" />
@@ -59,6 +63,7 @@
         <entry key="app/src/main/res/layout/fragment_list_mark.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/item_card.xml" value="0.2909311930338542" />
         <entry key="app/src/main/res/layout/item_language.xml" value="0.21822916666666667" />
+        <entry key="app/src/main/res/layout/item_result.xml" value="0.2947916666666667" />
         <entry key="app/src/main/res/layout/layout_bottom_search.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/layout/layout_bottomsheet_sort.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/layout/layout_menu.xml" value="0.23020833333333332" />

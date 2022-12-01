@@ -39,6 +39,8 @@
             <TextView
                 android:id="@+id/txtName"
                 style="@style/TextDetail"
+                android:textSize="@dimen/_14ssp"
+                android:drawableStart="@drawable/ic_about_us"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -64,12 +66,6 @@
                         android:layout_height="wrap_content"
                         android:text="Married" />
 
-                    <TextView
-                        style="@style/TextDetailTitle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dependent" />
-
                 </TableRow>
 
                 <TableRow
@@ -91,14 +87,6 @@
                         android:layout_columnWeight="1"
                         android:layout_marginHorizontal="@dimen/_5sdp" />
 
-                    <TextView
-                        android:id="@+id/txtDepedent"
-                        style="@style/TextDetail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:layout_marginHorizontal="@dimen/_5sdp" />
-
                 </TableRow>
 
             </TableLayout>
@@ -108,66 +96,6 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal">
-
-                <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TableRow
-                        android:layout_gravity="center"
-                        android:gravity="center">
-
-                        <TextView
-                            style="@style/TextDetailTitle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Education" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_gravity="center"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/txtEducation"
-                            style="@style/TextDetail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_marginHorizontal="@dimen/_5sdp" />
-
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:layout_marginTop="@dimen/_10sdp">
-
-                        <TextView
-                            style="@style/TextDetailTitle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Employed" />
-
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_gravity="center"
-                        android:gravity="center">
-
-                        <TextView
-                            android:id="@+id/txtEmployed"
-                            style="@style/TextDetail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_marginHorizontal="@dimen/_5sdp" />
-                    </TableRow>
-
-                </TableLayout>
 
                 <TableLayout
                     android:layout_width="wrap_content"
@@ -267,10 +195,99 @@
                     </TableRow>
                 </TableLayout>
 
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp">
+
+                    <TableRow
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                        <TextView
+                            style="@style/TextDetailTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dependent" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtDepedent"
+                            style="@style/TextDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginHorizontal="@dimen/_5sdp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            style="@style/TextDetailTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Education" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtEducation"
+                            style="@style/TextDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginHorizontal="@dimen/_5sdp" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <TextView
+                            style="@style/TextDetailTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Employed" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/txtEmployed"
+                            style="@style/TextDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_marginHorizontal="@dimen/_5sdp" />
+                    </TableRow>
+
+                </TableLayout>
+
             </LinearLayout>
 
             <TextView
                 style="@style/TextDetail"
+                android:textSize="@dimen/_14ssp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_5sdp" />

@@ -3,6 +3,7 @@ package com.htnguyen.customeranalysis.ultils
 import android.content.Context
 import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate
+import com.htnguyen.customeranalysis.R
 
 object PreferencesSettings {
     private const val PREF_FILE = "settings_pref"
@@ -44,6 +45,32 @@ object PreferencesSettings {
         val sharedPref = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE)
         val defaultValue = false
         return sharedPref.getBoolean(Constants.THEMES, defaultValue)
+    }
+
+    fun saveToBackground(context: Context, str: Int) {
+        val sharedPref = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putInt(Constants.BACKGROUND, str)
+        editor.apply()
+    }
+
+    fun getBackground(context: Context): Int {
+        val sharedPref = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE)
+        val defaultValue = Constants.theme
+        return sharedPref.getInt(Constants.BACKGROUND, defaultValue)
+    }
+
+    fun saveToColor(context: Context, str: String) {
+        val sharedPref = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putString(Constants.COLOR, str)
+        editor.apply()
+    }
+
+    fun getColor(context: Context): String? {
+        val sharedPref = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE)
+        val defaultValue = Constants.COLOR_ORANGE
+        return sharedPref.getString(Constants.COLOR, defaultValue)
     }
 
     fun setLanguage(context: Context, str: String) {

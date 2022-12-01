@@ -10,15 +10,28 @@
     android:background="@drawable/bg_work"
     android:elevation="@dimen/_2sdp">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/resultTypeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/bg_black_shape"
+        android:backgroundTint="?colorPrimary"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_text_documents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/lnName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/resultTypeIcon"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:id="@+id/txtId"
             android:layout_width="match_parent"
@@ -34,6 +47,7 @@
             android:layout_marginHorizontal="@dimen/_10sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_12ssp" />
+
         <TextView
             android:id="@+id/txtTime"
             android:layout_width="match_parent"
@@ -74,14 +88,17 @@
             android:text="@string/lock"
             android:textSize="@dimen/_12ssp"
             android:layout_marginHorizontal="@dimen/_15sdp"
-            app:drawableTopCompat="@drawable/ic_lock" />
+            android:textColor="@color/red"
+            app:drawableTopCompat="@drawable/ic_lock"
+            app:drawableTint="@color/red" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/pin"
             android:textSize="@dimen/_12ssp"
-            app:drawableTint="@color/black"
+            app:drawableTint="@color/yellow"
+            android:textColor="@color/yellow"
             android:layout_marginHorizontal="@dimen/_15sdp"
             app:drawableTopCompat="@drawable/ic_star" />
 
@@ -93,7 +110,8 @@
             android:textSize="@dimen/_12ssp"
             android:layout_marginHorizontal="@dimen/_15sdp"
             app:drawableTopCompat="@drawable/ic_edit"
-            app:drawableTint="@color/black" />
+            android:textColor="@color/green"
+            app:drawableTint="@color/green" />
 
         <TextView
             android:id="@+id/txtDelete"
@@ -101,8 +119,10 @@
             android:layout_height="wrap_content"
             android:text="@string/delete"
             android:textSize="@dimen/_12ssp"
+            android:textColor="@color/orange"
             android:layout_marginHorizontal="@dimen/_15sdp"
-            app:drawableTopCompat="@drawable/ic_delete" />
+            app:drawableTopCompat="@drawable/ic_delete"
+            app:drawableTint="@color/orange" />
 
     </LinearLayout>
 

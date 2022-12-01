@@ -71,7 +71,8 @@
                 android:id="@+id/edtInputName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_your_name"
@@ -81,6 +82,12 @@
                 android:textSize="@dimen/_12sdp"
                 app:drawableTint="?colorAccent"
                 android:inputType="text" />
+
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -286,7 +293,8 @@
                 android:id="@+id/edtCredit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_credit_history"
@@ -297,11 +305,18 @@
                 android:textSize="@dimen/_12sdp"
                 app:drawableTint="?colorAccent" />
 
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
             <EditText
                 android:id="@+id/edtProperty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_property_area"
@@ -312,11 +327,18 @@
                 android:textSize="@dimen/_12sdp"
                 app:drawableTint="?colorAccent" />
 
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
             <EditText
                 android:id="@+id/edtTotalIncome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_total_income"
@@ -327,11 +349,18 @@
                 app:drawableTint="?colorAccent"
                 android:inputType="numberDecimal" />
 
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
             <EditText
                 android:id="@+id/edtIncomeLog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_total_income_log"
@@ -342,11 +371,18 @@
                 app:drawableTint="?colorAccent"
                 android:inputType="numberDecimal"/>
 
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
             <EditText
                 android:id="@+id/edtEmi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_emi"
@@ -357,11 +393,18 @@
                 app:drawableTint="?colorAccent"
                 android:inputType="numberDecimal"/>
 
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
             <EditText
                 android:id="@+id/edtBalance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/bg_edittext"
                 android:drawablePadding="@dimen/_10sdp"
                 android:hint="@string/input_balance_income"
@@ -372,6 +415,11 @@
                 app:drawableTint="?colorAccent"
                 android:inputType="numberDecimal"/>
 
+            <TextView
+                style="@style/TextError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
