@@ -24,14 +24,17 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.htnguyen.customeranalysis.App
 import com.htnguyen.customeranalysis.R
 import com.htnguyen.customeranalysis.adapter.LoginPasswordExpandableAdapter
+import com.htnguyen.customeranalysis.base.BaseActivity
 import com.htnguyen.customeranalysis.database.CustomerRoomDatabaseClass
 import com.htnguyen.customeranalysis.databinding.ActivityMainBinding
 import com.htnguyen.customeranalysis.model.DataCustomer
 import com.htnguyen.customeranalysis.ultils.Constants
 import com.htnguyen.customeranalysis.ultils.Constants.FACEBOOK_PAGE_ID
 import com.htnguyen.customeranalysis.ultils.Constants.FACEBOOK_URL
+import com.htnguyen.customeranalysis.ultils.Event
 import com.htnguyen.customeranalysis.ultils.FileUtils
 import com.htnguyen.customeranalysis.view.activity.AddDataActivity
 import com.htnguyen.customeranalysis.view.activity.LanguageActivity
@@ -39,14 +42,17 @@ import com.htnguyen.customeranalysis.view.activity.TrashActivity
 import com.htnguyen.customeranalysis.view.component.BackgroundDialog
 import com.htnguyen.customeranalysis.view.fragment.ListCurrentFragment
 import com.htnguyen.customeranalysis.view.fragment.ListMarkFragment
+import io.reactivex.disposables.Disposable
 import kotlinx.coroutines.launch
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private val titles = arrayOf("Recent", "Pinned")
     private lateinit var binding: ActivityMainBinding
     var bottomSheetBehavior: BottomSheetBehavior<*>? = null
     var layoutBottomSheet: LinearLayout? = null
+
+    private var disposable: Disposable? = null
 
     private lateinit var loginPassAdapter: LoginPasswordExpandableAdapter
     private lateinit var groupList: Array<String>
@@ -112,6 +118,20 @@ class MainActivity : AppCompatActivity() {
         openDrawer()
         initView()
         setBottomSheetBehavior()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        disposable = App.eventBus.subscribe {
+            it[Event.EVENT_CHANGE_BACKGROUND]?.let {
+                recreate()
+            }
+
+            it[Event.EVENT_CHANGE_LANGUAGE]?.let {
+                recreate()
+
+            }
+        }
     }
 
     private fun openDrawer() {

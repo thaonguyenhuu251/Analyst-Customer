@@ -1,13 +1,10 @@
 package com.htnguyen.customeranalysis.ultils
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.htnguyen.customeranalysis.R
-import java.text.SimpleDateFormat
-import kotlin.math.roundToInt
 
 object FileUtils {
     fun isPrimeNumber(n: Int): Boolean {
@@ -86,14 +83,14 @@ object FileUtils {
 
     fun getColorTheme(color: Int): Int {
         return when (color) {
-            R.id.rbColor1 -> R.style.MyDialog
-            R.id.rbColor2-> R.style.MyDialog
-            R.id.rbColor3 -> R.style.MyDialog
-            R.id.rbColor4 -> R.style.MyDialog
-            R.id.rbColor5 -> R.style.MyDialog
-            R.id.rbColor6 -> R.style.MyDialog
-            R.id.rbColor7 -> R.style.MyDialog
-            else -> R.style.MyDialog
+            R.id.rbColor1 -> R.style.Theme_AppTeal
+            R.id.rbColor2-> R.style.Theme_AppOrange
+            R.id.rbColor3 -> R.style.Theme_AppSkyBlue
+            R.id.rbColor4 -> R.style.Theme_AppGreen
+            R.id.rbColor5 -> R.style.Theme_AppYellow
+            R.id.rbColor6 -> R.style.Theme_AppRed
+            R.id.rbColor7 -> R.style.Theme_AppBlue
+            else -> R.style.Theme_AppBrown
         }
     }
 

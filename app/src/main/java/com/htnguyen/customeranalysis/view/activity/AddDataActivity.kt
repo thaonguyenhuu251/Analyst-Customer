@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.htnguyen.customeranalysis.R
+import com.htnguyen.customeranalysis.base.BaseActivity
 import com.htnguyen.customeranalysis.databinding.ActivityAddDataBinding
 import com.htnguyen.customeranalysis.interfaces.ApiInterface
 import com.htnguyen.customeranalysis.model.CustomerRequest
@@ -18,7 +19,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class AddDataActivity : AppCompatActivity() {
+class AddDataActivity : BaseActivity() {
     private lateinit var binding: ActivityAddDataBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

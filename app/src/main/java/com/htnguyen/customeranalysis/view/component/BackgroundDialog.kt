@@ -1,6 +1,7 @@
 package com.htnguyen.customeranalysis.view.component
 
 import android.app.Dialog
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.fragment.app.DialogFragment
 import com.htnguyen.customeranalysis.R
 import com.htnguyen.customeranalysis.databinding.BackgroundDialogBinding
 import com.htnguyen.customeranalysis.ultils.Constants
+import com.htnguyen.customeranalysis.ultils.Event
 import com.htnguyen.customeranalysis.ultils.FileUtils
 import com.htnguyen.customeranalysis.ultils.PreferencesSettings
 
@@ -74,7 +76,6 @@ class BackgroundDialog : DialogFragment() {
             PreferencesSettings.saveToColor(
                 requireContext(),
                 FileUtils.getColorString(isChecked))
-            //Event.eventChangeBackground(Methods.getColorTheme(listColor))
         }
 
 
@@ -106,6 +107,11 @@ class BackgroundDialog : DialogFragment() {
             else -> binding.rbColor8.isChecked = true
 
         }
+    }
+
+    override fun onDismiss(dialog: DialogInterface) {
+        super.onDismiss(dialog)
+        Event.eventChangeBackground()
     }
 
     companion object {

@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/orange</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/orange</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/orange</item>
     </style>
 
     <style name="Theme.AppTeal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -15,7 +15,7 @@
         <item name="colorPrimaryVariant">@color/teal_200</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/teal_200</item>
     </style>
 
     <style name="Theme.AppSkyBlue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -24,7 +24,7 @@
         <item name="colorPrimaryVariant">@color/blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/blue</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/blue</item>
     </style>
 
     <style name="Theme.AppGreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -33,7 +33,7 @@
         <item name="colorPrimaryVariant">@color/green</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/green</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/green</item>
     </style>
 
     <style name="Theme.AppYellow" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -42,7 +42,7 @@
         <item name="colorPrimaryVariant">@color/yellow</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/yellow</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/yellow</item>
     </style>
 
     <style name="Theme.AppRed" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -51,7 +51,7 @@
         <item name="colorPrimaryVariant">@color/red</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/red</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/red</item>
     </style>
 
     <style name="Theme.AppBlue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -60,7 +60,7 @@
         <item name="colorPrimaryVariant">@color/blue_dark</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/blue_dark</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/blue_dark</item>
     </style>
 
     <style name="Theme.AppBrown" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -69,7 +69,7 @@
         <item name="colorPrimaryVariant">@color/darkBrown</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/darkBrown</item>
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" >@color/darkBrown</item>
     </style>
 
 

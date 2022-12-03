@@ -8,11 +8,12 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.htnguyen.customeranalysis.adapter.LanguageAdapter
+import com.htnguyen.customeranalysis.base.BaseActivity
 import com.htnguyen.customeranalysis.databinding.ActivityLanguageBinding
 import com.htnguyen.customeranalysis.ultils.Constants
 import com.htnguyen.customeranalysis.ultils.FileUtils
 
-class LanguageActivity : AppCompatActivity() {
+class LanguageActivity : BaseActivity() {
 
     private lateinit var binding: ActivityLanguageBinding
     var listLanguage = mutableListOf<String>()
