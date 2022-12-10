@@ -205,9 +205,8 @@ class ListCurrentFragment : Fragment() {
 
             linearMore.setOnClickListener {
                 linearMore.visibility = View.GONE
+                imageMore.isChecked = false
             }
-
-
 
             linearName.setOnClickListener {
                 linearMore.visibility = View.GONE

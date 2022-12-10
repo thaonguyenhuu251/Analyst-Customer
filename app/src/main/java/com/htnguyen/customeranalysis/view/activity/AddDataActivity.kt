@@ -129,7 +129,7 @@ class AddDataActivity : BaseActivity() {
                 binding.edtBalance.setText("")
                 binding.edtProperty.setText("")
 
-                val requestModel = CustomerRequest(
+                /*val requestModel = CustomerRequest(
                     gender,
                     married,
                     dependent,
@@ -141,6 +141,20 @@ class AddDataActivity : BaseActivity() {
                     incomeLog,
                     emi,
                     balanceIncome
+                )*/
+
+                val requestModel = CustomerRequest(
+                    1 ,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1.0f,
+                    2,
+                    5849.0f,
+                    8.674026f,
+                    0.355556f,
+                    5493.444444f
                 )
 
                 val response = ServiceBuilder.buildService(ApiInterface::class.java)

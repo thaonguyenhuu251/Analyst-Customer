@@ -8,7 +8,7 @@ object ServiceBuilder {
     private val client = OkHttpClient.Builder().build()
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("http://127.0.0.1:5000/")
+        .baseUrl("http://10.0.2.2:5000/")
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
         .build()

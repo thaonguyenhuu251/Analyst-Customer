@@ -14,7 +14,7 @@
         android:gravity="center"
         android:padding="@dimen/_10sdp"
         android:text="Information detail"
-        android:textColor="@color/orange"
+        android:textColor="?attr/colorPrimaryVariant"
         android:textSize="@dimen/_16ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

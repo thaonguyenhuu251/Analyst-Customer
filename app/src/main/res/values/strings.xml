@@ -72,4 +72,8 @@
         <item>Change Password</item>
         <item>Delete Password</item>
     </array>
+
+    <string name="error_text_empty">Cannot be left blank</string>
+    <string name="error_text">Cannot be left blank</string>
+
 </resources>

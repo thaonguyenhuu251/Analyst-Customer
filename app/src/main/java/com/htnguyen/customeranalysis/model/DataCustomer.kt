@@ -42,20 +42,24 @@ data class DataCustomer (
 
     @ColumnInfo(name = "result")
     var result: Int? = null,
+
+    var isClock: Boolean? = false,
+
+    var isPin: Boolean? = false
 )
 
 
 data class CustomerRequest (
     @ColumnInfo(name = "Gender")
-    var gender: Boolean? = null,
+    var gender: Int? = 0,
     @ColumnInfo(name = "Married")
-    var married: Boolean? = null,
+    var married: Int? = 0,
     @ColumnInfo(name = "Dependents")
-    var dependent: Boolean? = null,
+    var dependent: Int? = 0,
     @ColumnInfo(name = "Education")
-    var education: Boolean? = null,
+    var education: Int? = 0,
     @ColumnInfo(name = "Self_Employed")
-    var employed: Boolean? = null,
+    var employed: Int? = 0,
 
     @ColumnInfo(name = "Credit_History")
     var creditHistory: Float? = null,
@@ -73,10 +77,10 @@ data class CustomerRequest (
     var emi: Float? = null,
 
     @ColumnInfo(name = "Balance_Income")
-    var balanceIncome: Float? = null,
+    var balanceIncome: Float? = null
 )
 
 data class CustomerResponse (
     @ColumnInfo(name = "result")
-    var result: Int? = null,
+    var result: String,
 )

@@ -7,6 +7,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface ApiInterface {
-    @POST("loan")
+    @POST("/predict")
     fun sendReq(@Body requestModel: CustomerRequest) : Call<CustomerResponse>
 }
